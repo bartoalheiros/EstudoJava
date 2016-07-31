@@ -5,12 +5,14 @@ public class Conta {
   String dono;
   double saldo;
   double limite;
+  Cliente titular = new Cliente(); //Quando fizerem um new Conta,
+                                   //haverá um new Cliente para ele.
   
-  //Método que saca uma determinada quantidade de dinheiro de uma Conta;
+  //Método para sacar uma determinado valor de uma Conta;
   //Cria uma variavel double chamada "novoSaldo" e armazena o valor
   //de novoSaldo em this.saldo.
-  //Esse novoSaldo é o saldo corrente da Conta
-  //menos a quantidade digitada pelo usuário. 
+  //(Esse novoSaldo é o saldo corrente da Conta
+  //menos a quantidade digitada pelo usuário.(valor sacado) 
   boolean saca(double valor) {
 	if (this.saldo < valor) { 
 	  return false;
