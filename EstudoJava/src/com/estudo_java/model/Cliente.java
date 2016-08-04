@@ -1,7 +1,7 @@
-package entityBeans;
+package com.estudo_java.model;
 
 public class Cliente {
   String nome;
-  String sobrenome;
+  String endereco;
   String cpf;
 }

@@ -1,4 +1,4 @@
-package entityBeans;
+package com.estudo_java.model;
 
 public class Programa {
 

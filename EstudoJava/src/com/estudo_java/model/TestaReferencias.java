@@ -1,4 +1,4 @@
-package entityBeans;
+package com.estudo_java.model;
 
 public class TestaReferencias {
   public static void main(String[] args) {
