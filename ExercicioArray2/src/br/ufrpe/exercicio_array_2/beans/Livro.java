@@ -1,3 +1,6 @@
+//Aluno: José Bartolomeu Alheiros Dias Neto
+//Int Prog 2. BCC - UFRPE
+
 package br.ufrpe.exercicio_array_2.beans;
 
 public class Livro {
