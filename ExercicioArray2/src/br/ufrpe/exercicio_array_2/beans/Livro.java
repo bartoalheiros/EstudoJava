@@ -1,5 +1,7 @@
 //Aluno: José Bartolomeu Alheiros Dias Neto
 //Int Prog 2. BCC - UFRPE
+//Professor: Vanilson Burégio
+
 
 package br.ufrpe.exercicio_array_2.beans;
 

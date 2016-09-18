@@ -1,8 +1,5 @@
-//UFRPE - Universidade Federal Rural de Pernambuco
 //Aluno: José Bartolomeu Alheiros Dias Neto
-//Recife, 17 de setembro de 2016 - Pernambuco, Brasil.
-//Curso: Bacharelado em Ciências da Computação
-//Disciplina: Introdução à Programação 2
+//Int Prog 2. BCC - UFRPE
 //Professor: Vanilson Burégio
 
 
