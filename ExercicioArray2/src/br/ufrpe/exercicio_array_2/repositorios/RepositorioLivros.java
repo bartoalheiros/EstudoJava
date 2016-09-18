@@ -65,6 +65,8 @@ public class RepositorioLivros {
 			cod = input.nextLine();
 			input.nextLine(); //Limpa o buffer do teclado
 
+		} else {
+			System.out.println("Livro não existe!");
 		}  	  
 	}
 
@@ -75,16 +77,27 @@ public class RepositorioLivros {
 				if(i == proximo - 1){
 					livros[i] = null;
 					proximo = proximo - 1;
+					System.out.println("Livro Removido com Sucesso.");
 					break;
 				}else {
 					livros[i] = livros[proximo - 1];
 					livros[proximo -  1] = null;
 					proximo = proximo - 1;
+					System.out.println("Livro Removido com Sucesso.");
 					break;
 				}
-
-			}	
+            }	
 		}	  
+	}
+	
+	public void listar( ) {
+		if(this.getProximo() > 0){
+			for(int i = 0; i < this.getProximo(); i++) {
+				System.out.println(livros[i]);
+			}
+		} else {
+			System.out.println("Nenhum livro cadastrado.");
+		}
 	}
 
 	//passo o livro. Este é um método auxiliar, utilizado pelos métodos do repositorioLivros, para verificar se o livro que eu quero add, já tem um código cadastrado no sistema.

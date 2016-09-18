@@ -24,13 +24,14 @@ public class AplicacaoRepositorioLivros {
 		String cod;
 
 		do{
-            entrada = null; 
+			entrada = null; 
 			System.out.println("Escolha a opcao desejada: \n\n");
 			System.out.println("1 - Cadastrar Livro\n");
 			System.out.println("2 - Remover   Livro\n");
 			System.out.println("3 - Buscar    Livro\n");
 			System.out.println("4 - Alterar   Livro\n");
-			System.out.println("5 - Sair\n\n");
+			System.out.println("5 - Listar   Livros Cadastrados\n");
+			System.out.println("6 - Sair\n\n");
 			System.out.println("Opção: "); entrada = input.next(); 
 			input.nextLine(); //Limpa o buffer do teclado
 			//if(entrada.equals("5")){
@@ -42,8 +43,9 @@ public class AplicacaoRepositorioLivros {
 				Livro liv = new Livro();	
 				System.out.println("Digite o nome: \n");
 				String t = input.nextLine();
-				liv.setTitulo(t);
 				input.nextLine(); //Limpa o buffer do teclado
+				liv.setTitulo(t);
+
 
 				System.out.println("Qual o Autor?\n");
 				String aut = input.nextLine();
@@ -80,12 +82,19 @@ public class AplicacaoRepositorioLivros {
 				cod = input.nextLine();
 				repo.alterar(cod);
 				break;
+			
+			case "5":
+				repo.listar();
+				break;
+
+			default: 
+				System.out.println("Digite uma opção válida.");
 
 			}	
 			//} //else {
 
 			//} 
-		}while(entrada.equals("5") == false);
+		}while(entrada.equals("6") == false);
 
 		System.out.println("Obrigado por utilizar nosso sistema de Livraria!"); 
 

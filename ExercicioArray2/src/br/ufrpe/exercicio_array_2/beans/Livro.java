@@ -40,7 +40,7 @@ public class Livro {
 	}
 
 	public String toString ( ) {
-		return "Título: " + this.titulo + "\n" + "Autor: " + this.autor + "\n" + "Código: " + this.codigo;	  
+		return "Título: " + this.titulo + "\n" + "Autor: " + this.autor + "\n" + "Código: " + this.codigo + "\n";	  
 	}
 
 }
