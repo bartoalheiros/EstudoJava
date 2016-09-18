@@ -24,7 +24,7 @@ public class AplicacaoRepositorioLivros {
 		String cod;
 
 		do{
-
+            entrada = null; 
 			System.out.println("Escolha a opcao desejada: \n\n");
 			System.out.println("1 - Cadastrar Livro\n");
 			System.out.println("2 - Remover   Livro\n");
@@ -40,15 +40,15 @@ public class AplicacaoRepositorioLivros {
 			//instanciando um novo livro, preenchendo e guardando no repositórioLivros...  
 			case "1":
 				Livro liv = new Livro();	
-				System.out.println("Digite o nome: ");
+				System.out.println("Digite o nome: \n");
 				String t = input.nextLine();
-				input.nextLine(); //Limpa o buffer do teclado
 				liv.setTitulo(t);
+				input.nextLine(); //Limpa o buffer do teclado
 
 				System.out.println("Qual o Autor?\n");
 				String aut = input.nextLine();
-				input.nextLine(); //Limpa o buffer do teclado
 				liv.setAutor(aut);
+				input.nextLine(); //Limpa o buffer do teclado
 
 				System.out.println("Digite o código do livro: \n");
 				cod = input.nextLine();

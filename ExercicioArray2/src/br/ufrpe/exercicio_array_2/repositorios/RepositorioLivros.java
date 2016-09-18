@@ -72,9 +72,17 @@ public class RepositorioLivros {
 
 		for(int i = 0; i < this.getProximo(); i++) {
 			if(livros[i].getCodigo().equals(cod)) {
-				livros[i] = livros[proximo - 1];
-				livros[proximo -  1] = null;
-				proximo = proximo - 1;
+				if(i == proximo - 1){
+					livros[i] = null;
+					proximo = proximo - 1;
+					break;
+				}else {
+					livros[i] = livros[proximo - 1];
+					livros[proximo -  1] = null;
+					proximo = proximo - 1;
+					break;
+				}
+
 			}	
 		}	  
 	}
